@@ -1,0 +1,5 @@
+# Not part of the live site. Remove the media/ line once the trailer is approved
+# and embedded, so the video files get deployed.
+media/
+SEO-HANDOFF.md
+CLAUDE-CODE-BRIEF-milestone-1.md
