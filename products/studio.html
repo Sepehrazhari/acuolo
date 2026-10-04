@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Custom HR System Built Around Your Process | PeopleForge Studio</title>
-<meta name="description" content="A custom HR and people management system built around how your company already works, running in your own cloud account. One-time build, no per-employee fees, you own it. Engineered by Fakir Technology Consultants.">
+<title>Custom Company Operating System — One System That Fits How You Work | PeopleForge Studio</title>
+<meta name="description" content="A custom company operating system: one internal system built around how your company already works, covering people, clients, projects and process. Runs in your own cloud account. One-time build, no per-seat fees, you own it.">
 <link rel="canonical" href="https://peopleforge-ten.vercel.app/products/studio">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Custom HR System Built Around Your Process | PeopleForge Studio">
-<meta property="og:description" content="A custom HR and people management system built around how your company already works, running in your own cloud account. One-time build, no per-employee fees, you own it.">
+<meta property="og:title" content="Custom Company Operating System | PeopleForge Studio">
+<meta property="og:description" content="One custom internal system built around how your company already works — people, clients, projects and process — running in your own cloud account. You own it.">
 <meta property="og:url" content="https://peopleforge-ten.vercel.app/products/studio">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,7 +64,13 @@
 .st-final h2{font-size:clamp(1.4rem,2.4vw,1.9rem);margin-bottom:.75rem}
 .st-final p{font-size:15px;color:rgba(255,255,255,.78);max-width:520px;margin:0 auto 1.5rem;line-height:1.7}
 .st-final .st-ctas{justify-content:center}
-@media(max-width:860px){.st-3,.st-steps{grid-template-columns:1fr}}
+.st-dom{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem 1.5rem;margin-top:1.25rem}
+.st-domcard{border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.35rem;background:var(--white)}
+.st-domcard b{font-family:var(--font-display);font-size:14.5px;display:block;margin-bottom:.4rem}
+.st-domcard span{font-size:13.5px;color:var(--text-muted);line-height:1.6}
+.st-domcard.lead{border-color:var(--coral);border-width:1.5px}
+.st-domtag{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--coral-dark);font-weight:500;display:block;margin-bottom:.3rem}
+@media(max-width:860px){.st-3,.st-steps,.st-dom{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
 {
@@ -74,8 +80,8 @@
       "@type": "Service",
       "@id": "https://peopleforge-ten.vercel.app/products/studio#service",
       "name": "PeopleForge Studio",
-      "serviceType": "Custom HR and people management system development",
-      "description": "A custom HR and people management system built around an organisation's existing processes, deployed into the client's own cloud account. One-time build with no per-employee licence fees; the client owns the system and the data.",
+      "serviceType": "Custom company operating system and internal software development",
+      "description": "A custom company operating system: one internal system built around an organisation's existing processes, covering people operations, clients and projects, internal process and reporting. Deployed into the client's own cloud account. One-time build with no per-seat licence fees; the client owns the system, the source and the data.",
       "provider": {
         "@type": "Organization",
         "name": "Fakir Technology Consultants",
@@ -88,22 +94,24 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "What is a custom HR system?",
-          "acceptedAnswer": { "@type": "Answer", "text": "A custom HR system is people management software built around one organisation's existing processes rather than sold as a standard product. Instead of adapting how you work to fit a vendor's model, the system encodes the workflows you already use for hiring, reviews, progression and people data. It is typically deployed into infrastructure the company controls, so the company owns both the software and the data." } },
-        { "@type": "Question", "name": "How is this different from Personio, BambooHR or HiBob?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Those are per-seat products: you pay monthly for every employee, indefinitely, and the bill grows each time you hire. They are well built, but you adapt your process to their model and your data sits in their infrastructure. PeopleForge Studio is a one-time build shaped around your process, deployed in your own cloud account, with no per-employee licence. If you stop paying us, the system keeps running." } },
+        { "@type": "Question", "name": "What is a company operating system?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A company operating system is a single internal system that runs how an organisation actually works, rather than a collection of separate products each covering one slice. It typically holds people records, clients and projects, internal processes and reporting in one place, so the same person, client or project exists once instead of in four disconnected tools. Built custom, it encodes the processes a company already uses rather than imposing a vendor's model." } },
+        { "@type": "Question", "name": "How is this different from buying Personio, Asana and a CRM?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Those are good products, but each is designed around its own model of how you should work, each bills per seat every month, and none of them knows about the others. The cost is the subscriptions plus the seams between them: the same client or employee maintained in several places, and the manual work of keeping them agreeing. A custom company operating system replaces the seams with one system, built once, that you own." } },
         { "@type": "Question", "name": "Why not just build it in Airtable or Notion?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Airtable and Notion are good at structured lists and documents, and plenty of companies get a long way with them. They tend to break down on process logic: permissions that differ by role, steps that must happen in order, calculations that have to be right, and anything that needs to run without someone remembering to trigger it. They also charge per seat, and the setup usually lives in one person's head until that person leaves." } },
-        { "@type": "Question", "name": "How much does a custom HR system cost?",
-          "acceptedAnswer": { "@type": "Answer", "text": "PeopleForge Studio is quoted per project after a discovery call, because the cost depends entirely on how much you need it to do. A useful comparison is to take what you currently pay per employee per month for HR software, multiply it by your headcount and then by thirty-six months. That is your three-year cost for software you will never own." } },
+          "acceptedAnswer": { "@type": "Answer", "text": "Airtable and Notion are good at structured lists and documents, and many companies get a long way with them. They tend to break down on process logic: permissions that differ by role, steps that must happen in a set order, calculations that have to be right, and anything that needs to run without someone remembering to trigger it. They also charge per seat, and the setup usually lives in one person's head until that person leaves." } },
+        { "@type": "Question", "name": "How much does a custom company operating system cost?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It is quoted per project after a discovery call, because cost depends entirely on scope. A useful comparison is to add up every per-seat tool you currently pay for, multiply the total by your headcount, and multiply that by thirty-six months. That is your three-year cost for software you will never own, and it rises with every hire." } },
         { "@type": "Question", "name": "Who owns the system and the data?",
-          "acceptedAnswer": { "@type": "Answer", "text": "You do. The system is deployed into your own cloud account, so employee data stays inside infrastructure you control and never sits on a vendor's servers. For companies in the EU this simplifies GDPR questions considerably, because you determine where the data is hosted and who can reach it." } },
-        { "@type": "Question", "name": "Is a custom HR system only worth it for large companies?",
-          "acceptedAnswer": { "@type": "Answer", "text": "No. Headcount is the wrong test. What matters is whether your process is unusual enough that off-the-shelf tools force you into workarounds, and whether you are already paying per seat for several tools that only partly fit. Small companies with distinctive processes often benefit sooner than large ones with conventional ones." } },
-        { "@type": "Question", "name": "Does it handle payroll?",
-          "acceptedAnswer": { "@type": "Answer", "text": "No, and you should be wary of anyone who says otherwise. Payroll is regulated, jurisdiction-specific and changes constantly, so it belongs with a specialist provider. A custom system integrates with your payroll provider rather than replacing it." } },
+          "acceptedAnswer": { "@type": "Answer", "text": "You do, including the source. The system is deployed into your own cloud account, so company and employee data stays inside infrastructure you control rather than a vendor's. For companies in the EU this simplifies GDPR questions considerably, because you determine where data is hosted and who can reach it." } },
+        { "@type": "Question", "name": "Can it just cover HR and people management?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, and that is a common starting point. People operations - records, hiring, reviews, progression, leave - is usually the area where off-the-shelf tools fit worst, so it is a sensible first module. The system can then extend to clients, projects and internal process without another migration, because it was built to be extended." } },
+        { "@type": "Question", "name": "Is this only worth it for large companies?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Headcount is the wrong test. What matters is whether your processes are unusual enough that off-the-shelf tools force you into workarounds, and how many per-seat subscriptions you are already paying for tools that each only partly fit. Small companies with distinctive processes often benefit sooner than large ones with conventional ones." } },
+        { "@type": "Question", "name": "Does it handle payroll or accounting?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No, and you should be wary of anyone who says otherwise. Payroll, tax and statutory accounting are regulated, jurisdiction-specific and change constantly, so they belong with specialist providers. A custom system integrates with them rather than replacing them." } },
         { "@type": "Question", "name": "What happens when we need changes later?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Because you own the system and the source, you can have changes made by us, by another developer, or by your own team. Ongoing support and new features are available as an optional subscription, but nothing about the system stops working if you decline it." } }
+          "acceptedAnswer": { "@type": "Answer", "text": "Because you own the system and the source, changes can be made by us, by another developer, or by your own team. Ongoing support and new features are available as an optional subscription, but nothing stops working if you decline it." } }
       ]
     }
   ]
@@ -140,14 +148,13 @@
   </div>
 </nav>
 
-
 <main role="main">
 
   <section class="hero st-hero">
     <div class="container">
       <p class="st-eyebrow">PeopleForge Studio</p>
-      <h1>A people management system built around <em>your</em> process — not the other way round.</h1>
-      <p class="st-lede">Every HR tool comes with an opinion about how your company should work. When yours differs, you get workarounds: the tool for some of it, spreadsheets for the rest, and nobody certain which is current. Studio builds the system around the process you already have.</p>
+      <h1>One system that runs how <em>your</em> company works.</h1>
+      <p class="st-lede">Most companies end up with six tools that each fit about seventy per cent, none of which talk to each other. Studio builds a single company operating system around the processes you already have — people, clients, projects and the work in between — deployed into your own cloud account.</p>
       <div class="st-ctas">
         <a class="btn btn-primary" href="/products/studio-intake">Tell us what you need →</a>
         <a class="btn btn-outline" href="mailto:hello@peopleforge.co?subject=PeopleForge%20Studio%20%E2%80%94%20discovery%20call">Book a discovery call</a>
@@ -160,20 +167,48 @@
 
   <section class="section">
     <div class="container">
-      <h2 class="st-h2">The problem is rarely the tool. It is the gap around it.</h2>
-      <p class="st-sub">Three failure modes we see repeatedly, in companies of every size.</p>
+      <h2 class="st-h2">The problem is rarely any one tool. It is the seams between them.</h2>
+      <p class="st-sub">Each product is fine on its own. The cost is what happens where they meet.</p>
       <div class="st-3">
         <div class="st-card">
-          <h3>The workaround tax</h3>
-          <p>The tool covers most of a process, so the rest lives in a spreadsheet beside it. Now the same information exists twice and disagrees, and every question needs two places checked before anyone can answer it.</p>
+          <h3>The same thing, in four places</h3>
+          <p>A client exists in the CRM, the project tool, the invoicing system and a spreadsheet. An employee exists in the HR tool, the payroll export and someone's tracker. They disagree, and no one can say which is right without checking all of them.</p>
         </div>
         <div class="st-card">
-          <h3>Paying to grow</h3>
-          <p>Per-seat pricing bills you more precisely as you hire, which is exactly when budget is tightest. Multiple part-fitting tools multiply that, and none of the spend ever becomes an asset you own.</p>
+          <h3>The stack tax</h3>
+          <p>Every tool bills per seat, per month, forever, and each one charges you more precisely as you hire. Five subscriptions at a modest per-head price quietly becomes one of your larger line items, and none of it ever becomes an asset you own.</p>
         </div>
         <div class="st-card">
           <h3>The person-shaped dependency</h3>
-          <p>Someone clever wires it together in Airtable or Notion. It works, until they leave and nobody else understands the automations, the permissions, or why that column exists.</p>
+          <p>Someone clever wires it together with Airtable, Notion and automations. It works, until they leave and nobody else understands the permissions, the triggers, or why that column exists.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="st-h2">What it can run</h2>
+      <p class="st-sub">Scope is yours to choose. Most companies start with the area where off-the-shelf tools fit worst, then extend — without another migration, because it was built to be extended.</p>
+      <div class="st-dom">
+        <div class="st-domcard lead">
+          <span class="st-domtag">Usual starting point</span>
+          <b>People operations</b>
+          <span>Employee records and org structure, hiring pipelines, reviews and progression, leave and absence. This is where standard products force the most workarounds, which is why it is the common first module.</span>
+        </div>
+        <div class="st-domcard">
+          <b>Clients &amp; projects</b>
+          <span>Pipeline, delivery status, who is working on what, and the reporting that usually gets rebuilt by hand every month.</span>
+        </div>
+        <div class="st-domcard">
+          <b>Internal process</b>
+          <span>Approvals, requests, handoffs between teams — the steps that currently run on somebody remembering to send a message.</span>
+        </div>
+        <div class="st-domcard">
+          <b>One source of truth</b>
+          <span>A person, client or project exists once. Reporting reads from the same data everyone else works in, so the numbers stop depending on who produced them.</span>
         </div>
       </div>
     </div>
@@ -189,8 +224,8 @@
       <div class="st-pillar">
         <div class="st-pnum">01</div>
         <div>
-          <h3>It fits the process you already run</h3>
-          <p>We start from how your company actually works — your stages, your approvals, your definitions — and build to that. If your promotion process has a calibration step that no product supports, it gets built. You stop maintaining the gap between the tool and reality, which is where most HR admin time actually goes.</p>
+          <h3>It fits the processes you already run</h3>
+          <p>We start from how your company actually works — your stages, your approvals, your definitions — and build to that. If your promotion process has a calibration step no product supports, or your delivery process has an approval that exists only in someone's head, it gets built. You stop maintaining the gap between the tools and reality, which is where most operational admin time actually goes.</p>
         </div>
       </div>
 
@@ -198,10 +233,10 @@
         <div class="st-pnum">02</div>
         <div>
           <h3>You own it instead of renting it</h3>
-          <p>One build, no per-employee licence. Hiring ten more people does not increase what the system costs you. And because there is no subscription holding it hostage, the software keeps working whether or not you keep paying anyone — including us.</p>
+          <p>One build, no per-seat licence. Hiring ten more people does not increase what the system costs you. And because no subscription holds it hostage, it keeps working whether or not you keep paying anyone — including us.</p>
           <div class="st-maths">
             <b>Do the sum on your own numbers</b>
-            <p>Take what you pay per employee per month for HR software. Multiply by your headcount. Multiply by thirty-six. That is your three-year cost for something you will never own — and it rises every time you hire. Compare that with a one-time build. We would rather you ran that arithmetic yourself than took our word for it.</p>
+            <p>Add up every per-seat tool you pay for each month — the HR system, the project tool, the CRM, the rest. Multiply the total by your headcount. Multiply by thirty-six. That is your three-year cost for software you will never own, and it rises with every hire. Compare that with a one-time build. We would rather you ran that arithmetic yourself than took our word for it.</p>
           </div>
         </div>
       </div>
@@ -210,7 +245,7 @@
         <div class="st-pnum">03</div>
         <div>
           <h3>Your data stays in your own cloud</h3>
-          <p>The system is deployed into your own cloud account. Employee records, salary history and review notes stay inside infrastructure you control, rather than a vendor's. For EU companies that removes most of the awkward part of a GDPR conversation: you decide where it is hosted and who can reach it, and there is no third-party processor to justify.</p>
+          <p>The system is deployed into your own cloud account. Employee records, client data, salary history and commercial information stay inside infrastructure you control, rather than spread across several vendors. For EU companies that removes most of the awkward part of a GDPR conversation: you decide where it is hosted and who can reach it, and there is no set of third-party processors to justify.</p>
         </div>
       </div>
     </div>
@@ -219,21 +254,22 @@
   <section class="st-band">
     <div class="container">
       <h2 class="st-h2">Side by side</h2>
-      <p class="st-sub">An honest comparison. Per-seat products are good software — they are simply a different deal.</p>
+      <p class="st-sub">An honest comparison against a stack of good SaaS products. They are not bad software — they are a different deal.</p>
       <div class="st-scroll">
         <table class="st-table">
           <thead>
-            <tr><th></th><th>Per-seat HR software</th><th>PeopleForge Studio</th></tr>
+            <tr><th></th><th>A stack of per-seat tools</th><th>PeopleForge Studio</th></tr>
           </thead>
           <tbody>
-            <tr><td>Cost shape</td><td>Monthly, per employee, indefinitely</td><td class="yes">One-time build</td></tr>
-            <tr><td>Cost as you grow</td><td>Rises with every hire</td><td class="yes">Unchanged</td></tr>
-            <tr><td>Whose process wins</td><td>You adapt to the product</td><td class="yes">Built to yours</td></tr>
-            <tr><td>Where employee data lives</td><td>The vendor's infrastructure</td><td class="yes">Your own cloud account</td></tr>
+            <tr><td>Cost shape</td><td>Several subscriptions, per person, indefinitely</td><td class="yes">One-time build</td></tr>
+            <tr><td>Cost as you grow</td><td>Every tool bills more with each hire</td><td class="yes">Unchanged</td></tr>
+            <tr><td>Whose process wins</td><td>You adapt to each product in turn</td><td class="yes">Built to yours</td></tr>
+            <tr><td>Where the data lives</td><td>Split across each vendor</td><td class="yes">One place, in your cloud account</td></tr>
+            <tr><td>Keeping tools in sync</td><td>Integrations, exports, manual re-entry</td><td class="yes">Not required — one system</td></tr>
             <tr><td>If you stop paying</td><td>Access ends</td><td class="yes">It keeps running</td></tr>
             <tr><td>Getting a change made</td><td>Request it and wait for the roadmap</td><td class="yes">Commission it, or do it yourself</td></tr>
             <tr><td>Time to first value</td><td class="yes">Days — sign up and start</td><td>Weeks — it has to be built</td></tr>
-            <tr><td>Payroll and filings</td><td class="yes">Often included</td><td>Integrates with a specialist provider</td></tr>
+            <tr><td>Payroll, tax and accounting</td><td class="yes">Specialists available off the shelf</td><td>Integrates with a specialist provider</td></tr>
           </tbody>
         </table>
       </div>
@@ -249,7 +285,7 @@
       <div class="st-steps">
         <div class="st-step">
           <b>01 · Tell us what you need</b>
-          <p>Fill in the intake form or book a call. We want to understand the process you run today, including the parts that only exist in someone's head.</p>
+          <p>An intake form or a call. We want to understand the processes you run today, including the parts that only exist in someone's head.</p>
         </div>
         <div class="st-step">
           <b>02 · We design and build it</b>
@@ -271,11 +307,11 @@
       <p class="st-sub">Headcount is not the test — small companies with unusual processes often benefit sooner than large ones with conventional ones. These are the real disqualifiers.</p>
       <div class="st-not">
         <ul style="margin:0;padding-left:1.1rem">
-          <li><b>You need payroll.</b> Payroll is regulated, jurisdiction-specific and changes constantly. Use a specialist provider and integrate with it. Be wary of anyone who offers to build you one.</li>
-          <li><b>An off-the-shelf tool genuinely fits.</b> If your process is conventional and a product already covers it without workarounds, buy the product. Paying for custom to arrive at the same place is a waste.</li>
+          <li><b>You need payroll, tax or statutory accounting.</b> These are regulated, jurisdiction-specific and change constantly. Use specialist providers and integrate with them. Be wary of anyone offering to build you one.</li>
+          <li><b>Off-the-shelf genuinely fits.</b> If your processes are conventional and existing products cover them without workarounds, buy the products. Paying for custom to arrive at the same place is a waste.</li>
           <li><b>You need something running next week.</b> Signing up for a SaaS tool takes an afternoon. Building takes weeks. If the deadline is immediate, buy something now and revisit this later.</li>
-          <li><b>Your process is still changing weekly.</b> A custom system encodes decisions. If you have not settled how hiring or reviews work yet, wait until it stops moving — otherwise you are paying to set today's guess in stone.</li>
-          <li><b>Nobody internally will own it.</b> Any system needs someone whose job includes keeping it current. If there is no such person, an external product with a support line is the safer choice.</li>
+          <li><b>Your processes are still changing weekly.</b> A custom system encodes decisions. If you have not settled how things work yet, wait until they stop moving — otherwise you are paying to set today's guess in stone.</li>
+          <li><b>Nobody internally will own it.</b> Any system needs someone whose job includes keeping it current. If there is no such person, external products with support lines are the safer choice.</li>
         </ul>
       </div>
     </div>
@@ -287,15 +323,15 @@
     <div class="container">
       <h2 class="st-h2">Questions people ask</h2>
       <div class="st-faq">
-        <details><summary>What is a custom HR system?</summary><p>A custom HR system is people management software built around one organisation's existing processes rather than sold as a standard product. Instead of adapting how you work to fit a vendor's model, the system encodes the workflows you already use for hiring, reviews, progression and people data. It is typically deployed into infrastructure the company controls, so the company owns both the software and the data.</p></details>
-        <details><summary>How is this different from Personio, BambooHR or HiBob?</summary><p>Those are per-seat products: you pay monthly for every employee, indefinitely, and the bill grows each time you hire. They are well built, but you adapt your process to their model and your data sits in their infrastructure. Studio is a one-time build shaped around your process, deployed in your own cloud account, with no per-employee licence. If you stop paying us, the system keeps running.</p></details>
-        <details><summary>Why not just build it in Airtable or Notion?</summary><p>Airtable and Notion are good at structured lists and documents, and plenty of companies get a long way with them. They tend to break down on process logic: permissions that differ by role, steps that must happen in a set order, calculations that have to be right, and anything that needs to run without someone remembering to trigger it. They also charge per seat, and the setup usually lives in one person's head until that person leaves.</p></details>
-        <details><summary>How much does a custom HR system cost?</summary><p>It is quoted per project after a discovery call, because the cost depends entirely on how much you need it to do. The useful comparison is your own current spend: take what you pay per employee per month, multiply by headcount, multiply by thirty-six months. That is your three-year cost for software you will never own.</p></details>
-        <details><summary>Who owns the system and the data?</summary><p>You do. The system is deployed into your own cloud account, so employee data stays inside infrastructure you control and never sits on a vendor's servers. For companies in the EU this simplifies GDPR questions considerably, because you determine where the data is hosted and who can reach it.</p></details>
-        <details><summary>Is a custom HR system only worth it for large companies?</summary><p>No — headcount is the wrong test. What matters is whether your process is unusual enough that off-the-shelf tools force you into workarounds, and whether you are already paying per seat across several tools that each only partly fit. Small companies with distinctive processes often benefit sooner than large ones with conventional ones.</p></details>
-        <details><summary>Does it handle payroll?</summary><p>No, and you should be wary of anyone who says otherwise. Payroll is regulated, jurisdiction-specific and changes constantly, so it belongs with a specialist provider. A custom system integrates with your payroll provider rather than replacing it.</p></details>
+        <details><summary>What is a company operating system?</summary><p>A single internal system that runs how your organisation actually works, rather than a collection of separate products each covering one slice. It typically holds people records, clients and projects, internal processes and reporting in one place, so the same person, client or project exists once instead of in four disconnected tools. Built custom, it encodes the processes you already use rather than imposing a vendor's model.</p></details>
+        <details><summary>How is this different from buying Personio, Asana and a CRM?</summary><p>Those are good products, but each is designed around its own model of how you should work, each bills per seat every month, and none of them knows about the others. The cost is the subscriptions plus the seams between them: the same client or employee maintained in several places, and the manual work of keeping them agreeing. Studio replaces the seams with one system, built once, that you own.</p></details>
+        <details><summary>Why not just build it in Airtable or Notion?</summary><p>Airtable and Notion are good at structured lists and documents, and many companies get a long way with them. They tend to break down on process logic: permissions that differ by role, steps that must happen in a set order, calculations that have to be right, and anything that needs to run without someone remembering to trigger it. They also charge per seat, and the setup usually lives in one person's head until that person leaves.</p></details>
+        <details><summary>How much does it cost?</summary><p>It is quoted per project after a discovery call, because cost depends entirely on scope. The useful comparison is your own current spend: add up every per-seat tool you pay for, multiply the total by headcount, multiply by thirty-six months. That is your three-year cost for software you will never own.</p></details>
+        <details><summary>Who owns the system and the data?</summary><p>You do, including the source. The system is deployed into your own cloud account, so company and employee data stays inside infrastructure you control rather than a vendor's. For companies in the EU this simplifies GDPR questions considerably, because you determine where data is hosted and who can reach it.</p></details>
+        <details><summary>Can it just cover HR and people management?</summary><p>Yes, and that is a common starting point. People operations — records, hiring, reviews, progression, leave — is usually where off-the-shelf tools fit worst, so it is a sensible first module. The system can then extend to clients, projects and internal process without another migration, because it was built to be extended.</p></details>
+        <details><summary>Is this only worth it for large companies?</summary><p>No — headcount is the wrong test. What matters is whether your processes are unusual enough that off-the-shelf tools force workarounds, and how many per-seat subscriptions you already pay for tools that each only partly fit. Small companies with distinctive processes often benefit sooner than large ones with conventional ones.</p></details>
+        <details><summary>Does it handle payroll or accounting?</summary><p>No, and you should be wary of anyone who says otherwise. Payroll, tax and statutory accounting are regulated, jurisdiction-specific and change constantly, so they belong with specialist providers. A custom system integrates with them rather than replacing them.</p></details>
         <details><summary>What happens when we need changes later?</summary><p>Because you own the system and its source, changes can be made by us, by another developer, or by your own team. Ongoing support and new features are available as an optional subscription, but nothing stops working if you decline it.</p></details>
-        <details><summary>How long does it take?</summary><p>It depends on scope, and you get a fixed timeline in writing before anything starts rather than an open-ended engagement. A first version covering one or two workflows is a smaller undertaking than a system spanning the whole employee lifecycle, and we would usually suggest starting with the former.</p></details>
       </div>
     </div>
   </section>
@@ -355,9 +391,6 @@
     </div>
   </div>
 </footer>
-
-<script src="/assets/js/site.js"></script>
-
 
 <script src="/assets/js/site.js"></script>
 </body>
