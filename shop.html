@@ -55,22 +55,15 @@
           <p class="section-label">All products</p>
           <h1 style="font-size:clamp(1.75rem,3vw,2.5rem);">The HR toolkit — built different</h1>
         </div>
-        <input type="text" class="shop-search" id="shopSearch" placeholder="Search templates, frameworks..." oninput="filterShop()" aria-label="Search products">
+        <input type="search" class="shop-search" id="shopSearch" placeholder="Search templates, frameworks..." aria-label="Search products">
       </div>
     </div>
   </header>
 
   <div style="padding:1rem 0;border-bottom:1px solid var(--border);">
-    <div class="container">
-      <div class="filter-bar" role="group" aria-label="Filter products by category">
-        <button class="filter-btn active" onclick="setShopFilter('all',this)">All products</button>
-        <button class="filter-btn" onclick="setShopFilter('template',this)">Templates</button>
-        <button class="filter-btn" onclick="setShopFilter('framework',this)">Frameworks</button>
-        <button class="filter-btn" onclick="setShopFilter('ai',this)">AI tools</button>
-        <button class="filter-btn" onclick="setShopFilter('course',this)">Courses</button>
-        <button class="filter-btn" onclick="setShopFilter('consulting',this)">Consulting</button>
-        <button class="filter-btn" onclick="setShopFilter('bundle',this)">Bundles</button>
-      </div>
+    <div class="container shop-filters">
+      <div class="filter-bar" id="topicFilters" role="group" aria-label="Filter products by topic"></div>
+      <label class="live-toggle"><input type="checkbox" id="shopLiveOnly"> Available now only</label>
     </div>
   </div>
 
@@ -95,8 +88,8 @@
   <section style="padding:0 0 4rem;">
     <div class="container">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;">
-        <p id="shopCount" style="font-size:14px;color:var(--text-muted);">12 products</p>
-        <select onchange="sortShop(this.value)" style="font-size:13px;padding:7px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--white);font-family:'DM Sans',sans-serif;color:var(--text);" aria-label="Sort products">
+        <p id="shopCount" style="font-size:14px;color:var(--text-muted);"></p>
+        <select id="shopSort" style="font-size:13px;padding:7px 12px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--white);font-family:'DM Sans',sans-serif;color:var(--text);" aria-label="Sort products">
           <option value="default">Sort: featured</option>
           <option value="price-asc">Price: low to high</option>
           <option value="price-desc">Price: high to low</option>

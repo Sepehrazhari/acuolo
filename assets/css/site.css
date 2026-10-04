@@ -444,6 +444,12 @@ nav.site-nav {
 }
 .filter-btn.active { background: var(--coral-light); color: var(--coral-dark); border-color: var(--coral); }
 .filter-btn:hover:not(.active) { background: var(--linen); }
+.filter-count { font-size: 11px; opacity: 0.7; margin-left: 2px; }
+.shop-filters { display: flex; align-items: center; justify-content: space-between; gap: 12px 20px; flex-wrap: wrap; }
+.live-toggle { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-muted); cursor: pointer; white-space: nowrap; }
+.live-toggle input { accent-color: var(--coral); width: 16px; height: 16px; margin: 0; }
+.shop-empty { grid-column: 1 / -1; padding: 3rem 1rem; text-align: center; color: var(--text-muted); font-size: 14px; }
+.link-btn { background: none; border: none; padding: 0; color: var(--coral); font: inherit; text-decoration: underline; cursor: pointer; }
 
 /* ── Shop search ── */
 .shop-search {
