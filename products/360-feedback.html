@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Custom Performance Evaluation Form Builder — Free | PeopleForge</title>
+<title>Custom Performance Evaluation Form Builder — Free | Acuolo</title>
 <meta name="description" content="Build a custom performance evaluation form in minutes. Pick the role, seniority and competencies; get a finished review form with rating scales and written-feedback questions. Free, no account.">
 <link rel="canonical" href="https://peopleforge-ten.vercel.app/products/360-feedback">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Custom Performance Evaluation Form builder — PeopleForge">
+<meta property="og:title" content="Custom Performance Evaluation Form builder — Acuolo">
 <meta property="og:description" content="Build a custom performance evaluation form in minutes. Pick the role, seniority and competencies; get a finished review form with rating scales and written-feedback questions. Free, no account.">
 <meta property="og:url" content="https://peopleforge-ten.vercel.app/products/360-feedback">
 <meta name="twitter:card" content="summary">
@@ -98,15 +98,15 @@ input[type=text]:focus{border-color:var(--coral)}
 </head>
 <body>
 <div class="wrap">
-  <a class="backlink" href="/">&larr; Back to PeopleForge</a>
+  <a class="backlink" href="/">&larr; Back to Acuolo</a>
   <div class="brandbar">
     <div class="mark">P</div>
-    <div class="brand">PeopleForge</div>
+    <div class="brand">Acuolo</div>
     <div class="tag">360 Feedback Builder &middot; demo</div>
   </div>
   <h1>Build a 360 feedback form</h1>
   <div id="app"></div>
-  <div class="foot">Prototype &middot; the engine behind PeopleForge products</div>
+  <div class="foot">Prototype &middot; the engine behind Acuolo products</div>
 </div>
 
 <script>
@@ -331,7 +331,7 @@ function render(){
   if(S.step===4&&S.form){ h+=resultHTML(c,S.form); }
 
   if(S.step<4){
-    if(S.step===3){ h+='<div class="disclose">When you generate, a copy of the document and the choices you made are sent to the PeopleForge team so we can see which tools people actually use. Please do not enter anything confidential.</div>'; }
+    if(S.step===3){ h+='<div class="disclose">When you generate, a copy of the document and the choices you made are sent to the Acuolo team so we can see which tools people actually use. Please do not enter anything confidential.</div>'; }
     h+='<div class="nav"><button class="btn" data-act="back"'+(S.step===0?" disabled":"")+'>&larr; Back</button>';
     h+= S.step<3
       ? '<button class="btn dark" data-act="next">Continue &rarr;</button>'
@@ -345,7 +345,7 @@ function render(){
 
 function resultHTML(c,f){
   var h="";
-  h+='<div class="note">Built from your choices using the PeopleForge content library. '+
+  h+='<div class="note">Built from your choices using the Acuolo content library. '+
      'Copy it below and edit the wording to match how your team actually runs reviews.</div>';
 
   h+='<div class="fhead"><div class="eyebrow">360&deg; Feedback</div>'+
@@ -393,7 +393,7 @@ function resultHTML(c,f){
      '<button class="btn" data-act="restart">Start over</button>'+'</div>';
 
   h+='<div class="studio"><b>This is the form. The review cycle is the hard part.</b>'+
-     '<p>A form is a document — someone still has to send it to the right people, chase the responses, and pull the results together. PeopleForge Studio builds that as a working system for how your company actually runs reviews.</p>'+
+     '<p>A form is a document — someone still has to send it to the right people, chase the responses, and pull the results together. Acuolo Studio builds that as a working system for how your company actually runs reviews.</p>'+
      '<a href="/products/studio">See what Studio builds &rarr;</a></div>';
   return h;
 }

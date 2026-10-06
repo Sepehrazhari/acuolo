@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Career Ladder Framework Builder — Free | PeopleForge</title>
+<title>Career Ladder Framework Builder — Free | Acuolo</title>
 <meta name="description" content="Build a career ladder with clear level criteria and, just as importantly, ways to grow scope without a title change. Dual IC and management tracks. Free, no account.">
 <link rel="canonical" href="https://peopleforge-ten.vercel.app/products/career-ladder">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Career Ladder Framework builder — PeopleForge">
+<meta property="og:title" content="Career Ladder Framework builder — Acuolo">
 <meta property="og:description" content="Build a career ladder with clear level criteria and, just as importantly, ways to grow scope without a title change. Dual IC and management tracks. Free, no account.">
 <meta property="og:url" content="https://peopleforge-ten.vercel.app/products/career-ladder">
 <meta name="twitter:card" content="summary">
@@ -93,15 +93,15 @@ input[type=text]:focus{border-color:var(--coral)}
 </head>
 <body>
 <div class="wrap">
-  <a class="backlink" href="/">&larr; Back to PeopleForge</a>
+  <a class="backlink" href="/">&larr; Back to Acuolo</a>
   <div class="brandbar">
     <div class="mark">P</div>
-    <div class="brand">PeopleForge</div>
+    <div class="brand">Acuolo</div>
     <div class="tag">Career Ladder Builder &middot; demo</div>
   </div>
   <h1>Build a career ladder framework</h1>
   <div id="app"></div>
-  <div class="foot">Prototype &middot; the engine behind PeopleForge products</div>
+  <div class="foot">Prototype &middot; the engine behind Acuolo products</div>
 </div>
 
 <script>
@@ -363,7 +363,7 @@ function render(){
   if(S.step===4&&S.form){ h+=resultHTML(c,S.form); }
 
   if(S.step<4){
-    if(S.step===3){ h+='<div class="disclose">When you generate, a copy of the document and the choices you made are sent to the PeopleForge team so we can see which tools people actually use. Please do not enter anything confidential.</div>'; }
+    if(S.step===3){ h+='<div class="disclose">When you generate, a copy of the document and the choices you made are sent to the Acuolo team so we can see which tools people actually use. Please do not enter anything confidential.</div>'; }
     h+='<div class="nav"><button class="btn" data-act="back"'+(S.step===0?" disabled":"")+'>&larr; Back</button>';
     h+= S.step<3
       ? '<button class="btn dark" data-act="next">Continue &rarr;</button>'
@@ -395,7 +395,7 @@ function levelSectionHTML(section, showTrackLabel){
 
 function resultHTML(c,f){
   var h="";
-  h+='<div class="note">Built from your choices using the PeopleForge content library. '+
+  h+='<div class="note">Built from your choices using the Acuolo content library. '+
      'Copy it below and adapt the level names and wording to how your team already talks about progression.</div>';
 
   h+='<div class="fhead"><div class="eyebrow">Career Ladder</div>'+

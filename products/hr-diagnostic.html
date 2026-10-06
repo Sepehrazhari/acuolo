@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HR Diagnostic — What to Fix First | PeopleForge</title>
+<title>HR Diagnostic — What to Fix First | Acuolo</title>
 <meta name="description" content="Ten questions about how your company works today, and a prioritised answer to what to fix first. Weighted by company size, so you are not told to build things you do not need yet. Free, no account.">
 <link rel="canonical" href="https://peopleforge-ten.vercel.app/products/hr-diagnostic">
 <meta property="og:type" content="website">
-<meta property="og:title" content="HR Diagnostic — What to Fix First | PeopleForge">
+<meta property="og:title" content="HR Diagnostic — What to Fix First | Acuolo">
 <meta property="og:description" content="Ten questions about how your company works today, and a prioritised answer to what to fix first. Free, no account.">
 <meta property="og:url" content="https://peopleforge-ten.vercel.app/products/hr-diagnostic">
 <meta name="twitter:card" content="summary">
@@ -98,15 +98,15 @@ input[type=text]:focus{border-color:var(--coral)}
 </head>
 <body>
 <div class="wrap">
-  <a class="backlink" href="/">&larr; Back to PeopleForge</a>
+  <a class="backlink" href="/">&larr; Back to Acuolo</a>
   <div class="brandbar">
     <div class="mark">P</div>
-    <div class="brand">PeopleForge</div>
+    <div class="brand">Acuolo</div>
     <div class="tag">HR Diagnostic &middot; demo</div>
   </div>
   <h1>What should you fix first?</h1>
   <div id="app"></div>
-  <div class="foot">Prototype &middot; the engine behind PeopleForge products</div>
+  <div class="foot">Prototype &middot; the engine behind Acuolo products</div>
 </div>
 
 <script>
@@ -365,7 +365,7 @@ function render(){
 
   if(S.step<4){
     var ready = S.step===0 ? true : S.step===1 ? answered(GROUP1) : S.step===2 ? answered(GROUP2) : true;
-    if(S.step===3){ h+='<div class="disclose">When you generate, a copy of the report and the answers you gave are sent to the PeopleForge team so we can see which tools people actually use. Please do not enter anything confidential.</div>'; }
+    if(S.step===3){ h+='<div class="disclose">When you generate, a copy of the report and the answers you gave are sent to the Acuolo team so we can see which tools people actually use. Please do not enter anything confidential.</div>'; }
     h+='<div class="nav"><button class="btn" data-act="back"'+(S.step===0?" disabled":"")+'>&larr; Back</button>';
     if(!ready) h+='<span class="navnote">Answer all five to continue</span>';
     h+= S.step<3
@@ -386,7 +386,7 @@ function priBlock(x,i,kind){
         '<div class="pribody">'+esc(a.cost)+
         '<b>Where to start</b>'+esc(a.step)+'</div>';
   if(a.tool){ h+='<a class="pritool" href="'+a.tool.url+'">'+esc(a.tool.label)+' &rarr;</a>'; }
-  else { h+='<div class="pritool soon">No PeopleForge tool for this one yet</div>'; }
+  else { h+='<div class="pritool soon">No Acuolo tool for this one yet</div>'; }
   return h+'</div>';
 }
 
@@ -439,7 +439,7 @@ function resultHTML(c,r){
      '<button class="btn" data-act="restart">Start over</button></div>';
 
   h+='<div class="studio"><b>Some of this is not a document problem.</b>'+
-     '<p>Half of what is above can be fixed by writing something down, and the free tools will do that with you. The other half — people data that disagrees with itself, processes that only work when someone remembers to run them — needs a system rather than a document. That is what PeopleForge Studio builds.</p>'+
+     '<p>Half of what is above can be fixed by writing something down, and the free tools will do that with you. The other half — people data that disagrees with itself, processes that only work when someone remembers to run them — needs a system rather than a document. That is what Acuolo Studio builds.</p>'+
      '<a href="/products/studio">See what Studio builds &rarr;</a></div>';
   return h;
 }
@@ -477,7 +477,7 @@ function toMarkdown(c,r){
     r.notYet.forEach(function(x){ m+="**"+x.area.name+"** — "+x.area.notYet+"\n\n"; });
   }
   m+="## Where a document is not enough\n";
-  m+="Some of the above is fixed by writing something down. The rest — people data that disagrees with itself, processes that only run when someone remembers — needs a system. That is what PeopleForge Studio builds: https://peopleforge-ten.vercel.app/products/studio-intake\n";
+  m+="Some of the above is fixed by writing something down. The rest — people data that disagrees with itself, processes that only run when someone remembers — needs a system. That is what Acuolo Studio builds: https://peopleforge-ten.vercel.app/products/studio-intake\n";
   return m;
 }
 

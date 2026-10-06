@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tell us what you need — PeopleForge Studio intake</title>
-<meta name="description" content="Tell us what your company runs on today and what breaks. A short intake form for PeopleForge Studio, a custom company operating system engineered by Fakir Technology Consultants.">
+<title>Tell us what you need — Acuolo Studio intake</title>
+<meta name="description" content="Tell us what your company runs on today and what breaks. A short intake form for Acuolo Studio, a custom company operating system engineered by Fakir Technology Consultants.">
 <link rel="canonical" href="https://peopleforge-ten.vercel.app/products/studio-intake">
 <meta property="og:type" content="website">
-<meta property="og:title" content="PeopleForge Studio - custom people systems — PeopleForge">
+<meta property="og:title" content="Acuolo Studio - custom people systems — Acuolo">
 <meta property="og:description" content="A people management system built for how your company actually works, engineered by Fakir Technology Consultants. Tell us what you need, or book a discovery call.">
 <meta property="og:url" content="https://peopleforge-ten.vercel.app/products/studio-intake">
 <meta name="twitter:card" content="summary">
@@ -70,16 +70,16 @@ textarea{resize:vertical;min-height:80px;font-family:var(--body)}
 </head>
 <body>
 <div class="wrap">
-  <a class="backlink" href="/products/studio">&larr; Back to PeopleForge Studio</a>
+  <a class="backlink" href="/products/studio">&larr; Back to Acuolo Studio</a>
   <div class="brandbar">
     <div class="mark">P</div>
-    <div class="brand">PeopleForge</div>
-    <div class="tag">PeopleForge Studio &middot; intake</div>
+    <div class="brand">Acuolo</div>
+    <div class="tag">Acuolo Studio &middot; intake</div>
   </div>
   <h1>Tell us what you need</h1>
   <p class="lede">A few questions about your team and how you work. Takes about 2 minutes — we'll follow up personally once we've read it.</p>
   <div id="app"></div>
-  <div class="foot">Prototype &middot; the engine behind PeopleForge products</div>
+  <div class="foot">Prototype &middot; the engine behind Acuolo products</div>
 </div>
 
 <script>
@@ -153,7 +153,7 @@ function render(){
        kv.map(function(p){return '<div><div class="k">'+p[0]+'</div><div class="v">'+esc(p[1])+'</div></div>';}).join("")+'</div>';
     if(S.sendError){
       h+='<div class="errbox">Something went wrong sending this — your connection may have dropped. Please try again, or email us directly at '+
-         '<a href="mailto:hello@peopleforge.co">hello@peopleforge.co</a> and we’ll pick it up from there.</div>';
+         '<a href="mailto:hello@acuolo.com">hello@acuolo.com</a> and we’ll pick it up from there.</div>';
     }
   }
 
@@ -178,8 +178,8 @@ function confirmHTML(c){
   h+='<p>We’ve got what you sent and will reply at '+esc(c.email)+' within a couple of business days. '+
      'If it’s urgent, feel free to book a call in the meantime.</p>';
   h+='<div class="nav" style="justify-content:center;gap:10px">'+
-     '<button class="btn" onclick="location.href=\'/\'">&larr; Back to PeopleForge</button>'+
-     '<button class="btn dark" onclick="location.href=\'mailto:hello@peopleforge.co?subject=PeopleForge%20Studio%20%E2%80%94%20discovery%20call\'">Book a discovery call</button>'+
+     '<button class="btn" onclick="location.href=\'/\'">&larr; Back to Acuolo</button>'+
+     '<button class="btn dark" onclick="location.href=\'mailto:hello@acuolo.com?subject=Acuolo%20Studio%20%E2%80%94%20discovery%20call\'">Book a discovery call</button>'+
      '</div>';
   h+='</div>';
   return h;
@@ -188,7 +188,7 @@ function confirmHTML(c){
 /* ============================ SUBMIT ============================ */
 function toSummary(c){
   var lines=[];
-  lines.push("New PeopleForge Studio inquiry");
+  lines.push("New Acuolo Studio inquiry");
   lines.push("");
   lines.push("Company: "+(c.company||"-"));
   lines.push("Team size: "+c.teamSize);
