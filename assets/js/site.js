@@ -36,7 +36,8 @@ if(!reduceMotion && 'IntersectionObserver' in window){
       }
     });
   },{threshold:0.15});
-  document.querySelectorAll('main section:not(.hero)').forEach(el=>{
+  // The scroll story animates itself; fading its pinned frame would fight it.
+  document.querySelectorAll('main section:not(.hero):not(.story)').forEach(el=>{
     // Anything already on screen at load is shown immediately. Hiding it and
     // waiting for the observer causes a visible flash of missing content, and
     // there is nothing to animate in for something the reader can already see.

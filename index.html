@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="/assets/css/brand.css">
 <link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/story.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -197,7 +198,26 @@
     </div>
   </section>
 
-  <div class="stats-bar" role="region" aria-label="Company statistics">
+  <!-- Scroll story: pinned and driven by scroll (assets/js/home-story.js).
+       The summary below is what search engines and screen readers get. -->
+  <section class="story" id="story" aria-labelledby="story-heading">
+    <div class="as-sr">
+      <h2 id="story-heading">How Acuolo works</h2>
+      <p>Most companies run on spreadsheets, docs and wikis, a database tool, HR software, a CRM, a project tool, chat threads and someone's memory. None of them talk to each other, and each one fits about 70% of how you actually work.</p>
+      <p>Acuolo Studio builds one system that runs how your company works, with people, clients, projects and process connected in one source of truth. It is built around your process, runs in your own cloud, and you own it, with no per-seat fees.</p>
+      <p>Not ready for a system? Start free with the HR diagnostic, performance evaluation, career ladder, recruiting kit and engagement survey builders. Answer a few questions, get a finished document, no account needed.</p>
+    </div>
+    <div class="story-pin">
+      <div data-story-stage aria-hidden="true"></div>
+      <div class="story-ui">
+        <span class="story-hint" aria-hidden="true">Scroll ↓</span>
+        <a class="story-skip" href="#after-story">Skip ↓</a>
+      </div>
+      <div class="story-progress" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <div class="stats-bar" id="after-story" role="region" aria-label="Company statistics">
     <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">Free tools live now</div></div>
     <div class="stat-item"><div class="stat-num">Free</div><div class="stat-label">No account, no card</div></div>
     <div class="stat-item"><div class="stat-num">Minutes</div><div class="stat-label">From questions to document</div></div>
@@ -457,5 +477,7 @@
 </footer>
 
 <script src="/assets/js/site.js"></script>
+<script src="/assets/js/story.js"></script>
+<script src="/assets/js/home-story.js"></script>
 </body>
 </html>
